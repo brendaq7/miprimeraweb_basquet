@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Basquet</title>
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" media="screen">
+	<link rel="stylesheet" type="text/css" href="./css/print.css" media="print">
+	
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+    	$("#hide").click(function(){
+    	 $(".p1").hide();
+    	});
+    	$("#show").click(function(){
+    		$(".p1").show();
+    	});
+    });
+
+
+    $(document).ready(function(){
+    	$("#flip").click(function(){
+    		$("#panel").slideToggle("slow");
+    	});
+    })
+
+
+    $(document).ready(function(){
+  $("#start_derecha").click(function(){
+    $(".movi").animate({left:'200px'},7000);
+  });
+  $("#start_izquierda").click(function(){
+    $(".movi").animate({right:'200px'},7000);
+  });  
+  $("#stop").click(function(){
+    $(".movi").stop();
+  });
+
+  $("#stop2").click(function(){
+    $(".movi").stop(true);
+  });
+
+  $("#stop3").click(function(){
+    $(".movi").stop(true,true);
+  });
+
+});
+
+
+    $(document).ready(function(){
+  $("#azul").click(function(){
+    $("h1").css({"color":"blue"});
+  });
+  $("#rojo").click(function(){
+    $("h1").css({"color":"red"});
+  });
+   $("#amarillo").click(function(){
+    $("h1").css({"color":"yellow"});
+  });
+  $("#verde").click(function(){
+    $("h1").css({"color":"green"});
+  });
+});
+</script>
+    
+</head>
+<body>
+
+<div id="wrapper"><!-- #wrapper -->
+   
+  
+ </div><!-- /container --> 
+
+    <header>
+	
+		<div id="header">
+			<ul class="nav">
+				<li><a href="#">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#reglamento">Reglamento</a></li>
+        <li><a href="#leyendas">Leyendas</a></li>
+         <li><a href="#ligas">Ligas</a></li>
+        <li><a href="#marcas ">Marcas</a></li>
+			</ul>
+		</div>
+	
+	</header>
+	
+	<section id="main"><!-- #main content and sidebar area -->
+			<section id="content"><!-- #content -->
+			
+        		<article>   <button id="azul" style="color:blue; font-size: 17px" ;="">Cambiar de color</button>
+        			        <button id="rojo" style="color:red; font-size: 17px" ;="">Cambiar de color</button>
+        			        <button id="amarillo" style="color:yellow; font-size: 17px" ;="">Cambiar de color</button>
+        			        <button id="verde" style="color:green; font-size: 17px" ;="">Cambiar de color</button><br><br>
+        		<h1 style="color: red;">Basquetbol</h1><br>
+        	                             <button id="start_izquierda">Mover a la izquierda</button>
+                                       <button id="start_derecha">Mover a la derecha</button>
+                                       <button id="stop">Detener</button>
+                                       <button id="stop2">Detener todo</button>
+                                       <button id="stop3">Detener y Terminar</button><br>
+        	     	<div id="flip" width="500">
+        	     		              
+        	     		            <div class="movi" style="position:relative;">    
+                                       <img width="300" src="imagenes/basquet.jpg">
+                                    </div><br>
+                    </div>
+        	     	<div id="panel" style="display: none;"><img width="560" src="imagenes/cancha.jpg"></div>
+        	     	
+		            <img id="historia" width="500" src="imagenes/gif1.gif">
+                     
+					<br><br><h2><a href="#historia">Historia</a></h2>
+							<img src="imagenes/pelota.jpeg" alt="" class="alignright">
+							<p> El baloncesto nació como una idea a la necesidad de realizar alguna actividad deportiva durante el invierno, en la escuela de YMCA en Massachusetts. Al profesor de la Universidad de Illinois (Massachusetts) James Naismith, (un profesor de educación física) le fue encargada la misión, en 1891, de idear un deporte que se pudiera jugar bajo techo, pues los inviernos en esa zona dificultaban la realización de alguna actividad al aire libre.</p>
+
+                            <p>El profesor Naismith analizó las actividades deportivas que practicaban en la época, cuya característica predominante era la fuerza o el contacto físico, y pensó en algo suficientemente activo, que requiriese más destreza que fuerza y que no tuviese mucho contacto físico. El canadiense recordó un antiguo juego de su infancia denominado<font color="red"> "duck on a rock" </font>(El pato sobre una roca), que consistía en intentar alcanzar un objeto colocado sobre una roca lanzándole una piedra. Hay otras teorías sobre como lo inventó. Naismith pidió al encargado del colegio unas cajas de 50 cm de longitud pero lo único que le consiguió fueron unas canastas de melocotones, que mandó colgar en las barandillas de la galería superior que rodeaba el gimnasio, a una altura determinada.</p>
+        <br>
+         <button id="hide">Ocultar el parrafo</button>
+         <button id="show">Mostrar historia del baloncesto femenino</button> 
+          <p class="p1">
+        El baloncesto femenino comenzó en 1892, en el Smith College, cuando Senda Berenson, una profesora de educación física, modificó las reglas de Naismith para adaptarlas a las necesidades de las mujeres.
+Como Naismith tenía 18 alumnos, decidió que los equipos estuviesen formados por 9 jugadores cada uno. Con el paso del tiempo, este número se redujo primero a 7, y luego al actual de 5 jugadores.
+El tablero surgió para evitar que los seguidores situados en la galería donde colgaban las cestas, pudieran entorpecer la entrada del balón. Con el paso del tiempo las cestas de melocotones se convirtieron en aros metálicos con una red sin agujeros hasta evolucionar a la malla actual.
+El baloncesto fue un deporte de exhibición en los Juegos Olímpicos de 1928 y Juegos Olímpicos de 1932, alcanzando la categoría olímpica en los Juegos Olímpicos de 1936. Aquí Naismith tuvo la oportunidad de ver como su creación era convertida en categoría olímpica, cuando fue acompañado por Adolf Hitler en el palco de honor, en Alemania. El baloncesto femenino debió esperar hasta 1976 para su admisión como deporte olímpico.
+El juego gustó y se estableció pronto en Estados Unidos. México, fue donde primero se introdujo por motivos geográficos. A Europa, llegó de la mano de las sedes de YMCA a París, Francia. Pero no fue hasta la primera guerra mundial que cogió gran impulso, sobre todo gracias a los soldados estadounidenses que jugaban en sus ratos libres.
+El baloncesto en la actualidad cuenta con una gran difusión en diferentes países de todo el mundo, siendo uno de los deportes con más participantes y competiciones regulares en distintas zonas y países del mundo. En Estados Unidos, se disputa la NBA, considerada la competición más prestigiosa en el mundo del baloncesto de clubes.
+La línea de tres puntos (triple), se probó en Estados Unidos en 1933. Sin embargo, no sería adoptada por la ABA hasta el año 1968, llegando a la NBA en la temporada 1979-80. En el baloncesto FIBA habría que esperar hasta 1984 para que formara parte de su reglamento.</p><p>
+
+						</p></article>
+						
+        		<article>
+							<img id="reglamento" src="imagenes/gif2.gif"><br><br><h2><a href="#reglamento">Reglamento</a></h2>
+							<p> Las reglas internacionales de baloncesto son elaboradas por el comité central de la FIBA[4] [5] y son revisadas cada dos años. Son de aplicación en todas las competiciones de carácter internacional entre países y adoptadas por la mayoría de federaciones nacionales, incluida la FEB. En Estados Unidos la NBA hace uso de un reglamento diferente al establecido por FIBA. Actualmente se está llevando a cabo un proceso gradual de acercamiento entre estas dos grandes corrientes de reglas del baloncesto.[6] En 1971 las reglas del baloncesto femenino se modificaron y se hicieron más parecidas a la de los partidos masculinos.</p>
+
+<h3>Arbitraje</h3>
+
+<p>Trío arbitral de baloncesto debatiendo una acción.
+Un partido debe ser dirigido por tres árbitros, uno principal y dos auxiliares. Estos serán asistidos desde la mesa de anotadores, cronometradores y un comisario técnico. Los árbitros y sus ayudantes dirigirán el juego de acuerdo con las reglas e interpretaciones oficiales. El árbitro principal decidirá en cualquier situación de discrepancia entre árbitros auxiliares, mesa de anotadores, dudas de validez en las canastas, dará su aprobación al acta, es el responsable de verificar, inspeccionar y aprobar todos los elementos técnicos y podrá tomar decisiones sobre situaciones no reglamentadas ni regladas. Los árbitros se pueden comunicar con la mesa de anotadores y con el resto de árbitros mediante la gesticulación, señalizando las incidencias con una serie de señales preestablecidas.</p>
+
+<p>Una violación es una infracción de las reglas de juego, penalizada con un saque de fondo o banda para el equipo contrario desde el punto más cercano al de la infracción. Violaciones más comunes:</p>
+
+<h4>Pasos (Art.25)</h4>
+<p>El avance ilegal (pasos) es un desplazamiento ilegal de un jugador con control de balón (el balón reposa sobre una o ambas manos del jugador). Se produce avance ilegal cuando, una vez establecido el pie de pivote, el jugador:</p>
+<p>•Lo levanta para iniciar un regate. Denominados comúnmente pasos de salida o arrancada. (No sancionables en baloncesto NBA).</p>
+<p>•Estando con ambos pies (incluido el de pivote) en contacto con el suelo, salta y, antes de realizar un pase o tiro a canasta, vuelve a tocar con un pie el suelo.</p>
+<p>•Estando en movimiento, y saltando sobre el pie de pivote, da dos apoyos más, independientemente del orden de los pies.</p>
+<p>•Desliza voluntaria o involuntariamente el pie de pivote por el suelo creando una ventaja, el gesto de pivotar no se considera deslizar.</p>
+<p>Es legal que un jugador caiga al suelo y resbale mientras sostiene el balón, o que obtenga el control del balón mientras esté tumbado o sentado en el suelo.</p>
+<p>• Es una violación si, después, el jugador rueda o intenta levantarse mientras sostiene el balón.</p>
+<h4>Dobles (Art.24)</h4>
+Los dobles es una falta por acompañar el balón al botar.Acostumbra a pasar cuando el jugador hace dos pasos y bota el balón.
+Pie
+Un jugador no debe tocar el balón con el pie intencionadamente. Este acto se considera violación. Aunque también se considera violación si es sin intención de tocar el balón, y se sanciona de la misma manera, saque de banda para el equipo contrario del que ha tocado el balón.
+<h4>3 segundos en Zona (Art.26)</h4>
+<p>No se puede permanecer más de 3 segundos en el área restringida del equipo contrario cuando se está atacando. En caso de que estés defendiendo se puede estar en la zona el tiempo que quieras.</p>
+<p>Esta es una de las mayores diferencias entre el reglamento FIBA y NBA. En la liga norteamericana no se le permite al jugador defensivo permanecer en la zona pintada, a menos que esté marcando a un jugador atacante.</p>
+
+Salvo excepciones:
+
+•El jugador intente abandonar la zona restringida.
+•El jugador esté realizando un regate a canasta transcurridos 3 segundos.
+•Un jugador de su mismo equipo esté en acción de tiro a canasta.
+Saque de banda/fondo
+Se debe sacar antes de 5 segundos con el balón a disposición del jugador, pudiendo dar un paso normal lateral y todos los posibles hacia atrás. Cualquier infracción de esta regla es una violación.
+24 segundos (Art.29)
+Un equipo que obtiene un nuevo control de balón debe efectuar un lanzamiento a canasta antes de 24 segundos. En caso de que transcurridos 24 segundos el balón siga en las manos del lanzador o no haya tocado aro y su posesión no sea clara para el equipo oponente, se comete una violación. Los 24 segundos se reinician cada vez que el balón toca el aro, se comete una violación o una falta. En caso de que la falta en defensa se produzca con menos de 14 segundos de posesión restantes, el dispositivo de 24 se reinicia con 14 segundos.
+
+Árbitro señalando falta personal.
+Campo atrás (Art.30)
+El balón devuelto a pista trasera (campo atrás) se produce cuando un equipo tiene control de balón en pista delantera y uno de sus jugadores es el último en tocar el balón en pista delantera y después él o un compañero es el primero en tocarlo en pista trasera.
+Faltas
+Falta personal (Art.34)
+Cuando un jugador contacta ilegalmente con un adversario y le causa una desventaja u obtiene una ventaja del contacto, se sanciona falta personal. Se considera contacto ilegal aquel que se produce cuando uno de los jugadores no respeta el cilindro del otro jugador y se considera responsable del contacto al jugador que invade el cilindro del otro o sale del suyo. Un jugador no agarrará, bloqueará, empujará, cargará, zancadilleará ni impedirá el avance de un adversario extendiendo las manos, brazos, codos, hombros, caderas, piernas, rodillas ni pies; ni doblará su cuerpo en una posición ‘anormal’ (fuera de su cilindro), ni incurrirá en juego brusco o violento. La penalización para una falta personal es un saque para el equipo contrario desde el punto más cercano en la línea de fondo/lateral, salvo las faltas de equipo que se expondrán más adelante. A la quinta falta (6.ª en la NBA) el jugador será eliminado.
+
+Árbitro señalando una falta en ataque.
+Falta en ataque
+Se produce cuando un jugador cuyo equipo tiene control de balón comete una falta personal al empujar o chocar contra el torso de un jugador que en posición legal de defensa (Ambos pies en contacto con el suelo, encarado al atacante, dentro de su cilindro y pudiéndose desplazar lateralmente y hacia atrás, no hacia delante). Si ese contacto causa una desventaja al defensor se sanciona falta del equipo con control de balón (falta en ataque).
+Falta antideportiva (Art.36)
+Una falta antideportiva es una falta de jugador que implica contacto y que, a juicio del árbitro, no constituye un esfuerzo legítimo de jugar directamente el balón dentro del espíritu y la intención de las reglas o bien, el contacto es de brusquedad excesiva. Se sanciona con dos tiros libres y posesión para el equipo contrario.
+Falta técnica
+Falta a un jugador o de un miembro del banquillo que no implica contacto, sino falta de cooperación o desobediencia deliberada o reiterada al espíritu de las reglas. La segunda falta técnica que se le pite a un mismo jugador contará como descalificante. Una falta técnica contará como falta personal, es decir, se sumará una falta al jugador al que le ha sido pitada la falta técnica, así como a las faltas de equipo. Se sanciona igual que la antideportiva.
+Falta descalificante
+Una falta descalificante es cualquier infracción antideportiva flagrante de un jugador, sustituto, jugador excluido, entrenador, ayudante de entrenador o acompañante de equipo que deberá abandonar el campo y no podrá establecer contacto visual con el mismo durante el resto del partido. 2 faltas antideportivas constituyen una falta descalificante. Cabe mencionar que una falta descalificante puede conllevar también uno o varios partidos de suspensión según lo decida la organización de la competición.
+Después de una falta técnica, antideportiva o descalificante se conceden 2 tiros libres y saque desde la prolongación de la línea central enfrente de la mesa de anotadores.
+
+Wally Szczerbiak lanzando un tiro libre.
+Tiros libres
+Si un equipo comete cinco faltas en un período (o 2 en los dos últimos minutos de cada cuarto), a partir de ese momento todas las faltas personales que realice durante ese período serán sancionadas con dos tiros desde la línea de tiros libres de su zona (situada a 4,60 m de la canasta). También se efectuarán tiros libres cuando un jugador recibe una falta mientras se halla en acción de tiro, determinándose su número según la zona de puntuación en la que se encuentre (de 2 o 3 puntos). Si durante esa acción de tiro con falta la canasta se consigue, el cesto es válido y se concede un tiro adicional. Durante la ejecución del tiro libre, el jugador que está tirando no podrá pisar la línea, esto supondría que aunque entrase la canasta el tiro no sería válido, al igual que si uno de sus compañeros invade la zona antes de que el balón salga de las manos del lanzador, por otra parte si un rival entra en la zona antes de que el jugador suelte el balón el tiro se repetirá en caso de que no haya entrado.  <p></p>
+						</article>
+						
+						
+					<article>
+						  <img id="leyendas" src="imagenes/gif3.gif">
+					      <h2><a href="leyendas">Jugadores leyendas del Basquetbal</a></h2>
+					      <p>leyenda leyenda leyenda</p>
+					</article>	
+					
+					
+					<article>
+						 <img id="ligas" src="imagenes/gif4.png">
+					    <h2><a href="">Ligas</a></h2>
+					      <p>ligas ligas ligas</p>
+					</article>
+			
+				
+					<article>
+					   <h2 id="marcas"><a href="#marcas">Marcas de pelotas y zapatillas</a></h2>
+					   <p> marcas marcas marcas</p>
+					</article>
+			</section><!-- end of #content -->
+
+
+
+		<aside id="sidebar"><!-- sidebar -->
+				<h3>Menú </h3>
+					<ul>
+						<li><a href="#">Incio</a></li>
+						<li><a href="#historia">Historia</a></li>
+						<li><a href="#reglamento">Reglamento</a></li>
+						<li><a href="#leyendas">Leyendas</a></li>
+						<li><a href="#ligas">Ligas</a></li>
+						<li><a href="#marcas">Marcas de pelota</a></li>
+					</ul>
+	
+	
+					
+				<h3>Sponsors</h3>
+					<img width="180" src="imagenes/nba.jpg"><br><br>
+
+				<h3>Concactamos</h3>
+					<ul>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">LinkedIn</a></li>
+						<li><a href="#">Flickr</a></li>
+					</ul>
+
+		</aside><!-- end of sidebar -->
+
+	</section><!-- end of #main content and sidebar-->
+	
+		<footer>
+		<section id="footer-area">
+
+			<section id="footer-outer-block">
+					<aside class="footer-segment">
+							<h4>Balones de basquetball</h4>
+								<ul>
+									<li><a href="#">balo1</a></li>
+									<li><a href="#">balon2</a></li>
+									<li><a href="#">balon3</a></li>
+								</ul>
+					</aside><!-- end of #first footer segment -->
+
+					<aside class="footer-segment">
+							<h4>Posición de juego</h4>
+								<ul>
+									<li><a href="#">Base</a></li>
+									<li><a href="#">Escolta</a></li>
+									<li><a href="#">Alero</a></li>
+									<li><a href="#">Ala-Pivote</a></li>
+									<li><a href="#">Pivote</a></li>
+								</ul>
+					</aside><!-- end of #second footer segment -->
+
+					<aside class="footer-segment">
+							<h4>Pases </h4>
+								<ul>
+									<li><a href="#">De pecho</a></li>
+									<li><a href="#">Picado o de pique</a></li>
+									<li><a href="#">Debeisbol</a></li>
+								</ul>
+					</aside><!-- end of #third footer segment -->
+					
+					<aside class="footer-segment">
+							<h4>Tiros</h4>
+								<p>Tiro en suspension y mas..</p>
+					</aside><!-- end of #fourth footer segment -->
+
+			</section><!-- end of footer-outer-block -->
+
+		</section><!-- end of footer-area -->
+	</footer>
+	
+</div><!-- #wrapper -->
+<!-- Free template created by http://freehtml5templates.com -->
+
+</body></html>
